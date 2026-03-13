@@ -72,6 +72,13 @@ function togglePopover(trayBounds) {
     createPopoverWindow();
   }
 
+  // On Linux, tray click bounds are often {x:0, y:0, width:0, height:0}
+  // Fall back to cursor position in that case
+  if (trayBounds.x === 0 && trayBounds.y === 0 && trayBounds.width === 0 && trayBounds.height === 0) {
+    const cursor = screen.getCursorScreenPoint();
+    trayBounds = { x: cursor.x, y: cursor.y, width: 0, height: 0 };
+  }
+
   const { x, y } = calculatePopoverPosition(trayBounds);
   popoverWindow.setPosition(x, y, false);
   popoverWindow.show();

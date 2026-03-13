@@ -1,6 +1,6 @@
 {
   "name": "downnotice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cross-platform desktop application that monitors RSS feeds for cloud provider outages",
   "main": "src/main/main.js",
   "scripts": {
@@ -42,7 +42,7 @@
         "AppImage",
         "flatpak"
       ],
-      "icon": "assets/icons/app-icon.png",
+      "icon": "assets/icons/",
       "category": "Utility"
     },
     "flatpak": {
