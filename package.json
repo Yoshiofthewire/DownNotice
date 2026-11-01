@@ -55,13 +55,13 @@
   },
   "dependencies": {
     "electron-store": "^8.1.0",
-    "fast-xml-parser": "^4.3.0",
+    "fast-xml-parser": "^5.7.0",
     "node-fetch": "^2.7.0",
     "auto-launch": "^5.0.6"
   },
   "devDependencies": {
     "electron": "^42.11.16",
-    "electron-builder": "^24.9.0",
+    "electron-builder": "^26.18.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.18.5",
